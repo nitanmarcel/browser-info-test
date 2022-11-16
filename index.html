@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Today's Date</title>
+	<div id='answer'></div>
+	<script>
+		let res = ""
+        for (let x in window.navigator) {
+            let tag = document.createElement("p");
+            let text = document.createTextNode(x + " : " + window.navigator[x])
+            tag.appendChild(text)
+            document.getElementById('answer').appendChild(tag)
+        }
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
